@@ -1,15 +1,17 @@
 # What this public export leaves out
 
 This repository is a public export of CalcLM's private research repository, made by
-`tools/public_export.py` from commit `d3cc4742ae27`. CalcLM publishes its paper and its
-code. It never publishes the trained weights, programs the model generated, the
-training data, the TI-OS ROM or emulator state, and the research record behind the
-paper (plans, write-ups, run records, working notes) stays private: the paper is the
-public record. The export publishes only files its allow-list names, leaves out or
-edits the files described below, and was scanned for generated programs, token-id
-arrays, corpus samples, binaries, personal e-mail addresses and private names.
+`tools/public_export.py` from commit `5d93c39ec9b1`. CalcLM publishes its paper and its
+code. It does not publish v2.6's trained weights (the README says why; a separate
+model trained only on licence-clean data is being evaluated as a possible downloadable
+release), programs the model generated, the training data, the TI-OS ROM or emulator
+state, and the research record behind the paper (plans, write-ups, run records,
+working notes) stays private: the paper is the public record. The export publishes
+only files its allow-list names, leaves out or edits the files described below, and
+was scanned for generated programs, token-id arrays, corpus samples, binaries,
+personal e-mail addresses and private names.
 
-## Left out (669 files)
+## Left out (670 files)
 
 By category, with the export's rules:
 
@@ -24,7 +26,7 @@ By category, with the export's rules:
 - install guides (`ce/calclm/INSTALL*.md`): 4 files. For calculator bundles that were never published.
 - a toolchain example (`ce/hello/*`): 3 files. A byte-identical copy of the CE C toolchain's hello-world example, under the toolchain's licence, not CalcLM's; nothing uses it.
 - export and release tooling (`tools/*`, `.githooks/*`, `ce/tests/test_bench_import.py`): 25 files. This export's scripts, the release guard, the pre-commit hook, and a test that the private tools package and the CEmu wrapper coexist.
-- working notes (`docs/agents/*`): 48 files. Status, log, task specs and reports, audits, process proposals, release notes and the publishing runbook.
+- working notes (`docs/agents/*`): 49 files. Status, log, task specs and reports, audits, process proposals, release notes and the publishing runbook.
 - the public README's source (`README.public.md`): 1 file. Published as README.md.
 
 ## Edited (19 files)
@@ -63,7 +65,7 @@ In 19 published files, the author's first name became
 `<repo>`, other home paths `~/`, and the time zone "local time"; a local rating
 model is named generically. A published file that records the sha256 of a file
 changed here records the changed file's sha256 instead ("sha256 pins").
-Replacements: names 232, home paths 5, sha256 pins 2.
+Replacements: names 239, home paths 5, sha256 pins 2.
 
 ## Mentioned but not published (103 files)
 

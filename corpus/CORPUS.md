@@ -25,7 +25,8 @@ Source-specific notes:
 - ticalc.org: master.index lists 15,932 files in the wanted BASIC dirs; 14,705 came from the 2014 WARC and 1,227 were fetched live.
 - TI-Planet: 1,730 distinct "Basic" entries listed; resolved so far: downloaded 1,712, fail 2, ticalc-covered 12, ticalc-extra 4.
 - GitHub: 3,697 non-fork candidate repos; 3,697 trees read; 1,073 repos contain matching files; 2,686 blobs fetched (294 skipped as identical blobs).
-- Cemetech: **not used.** Its robots.txt opens with "Block known bots whose purpose is to harvest data" and disallows ClaudeBot, GPTBot, Google-Extended, cohere-ai and similar AI-training crawlers. Our User-Agent is not on the list, but the operator's intent is plainly to opt out of AI-training collection, so we respected it. Most Cemetech BASIC files are also mirrored on ticalc.org.
+- Cemetech: **not crawled.** Its robots.txt opens with "Block known bots whose purpose is to harvest data" and disallows ClaudeBot, GPTBot, Google-Extended, cohere-ai and similar AI-training crawlers. The operator's intent is plainly to opt out of AI-training collection, so we respected it. Cemetech was not crawled, but Cemetech files mirrored on ticalc.org were not filtered out.
+- Removal requests: an author who wants their programs left out of the corpus can open an issue on the public repository's GitHub issues (https://github.com/cwklurks/calclm/issues).
 
 ## Dedup and split
 

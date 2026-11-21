@@ -1,17 +1,39 @@
 # CalcLM
 
-CalcLM is a small language model that runs on a stock TI-84 Plus CE graphing calculator and
-writes TI-BASIC programs. The calculator does all of the work itself, with no computer
-attached.
+A TI-84 Plus CE that writes its own programs, and a measurement of how often they are right.
+
+CalcLM is a small language model that runs on a TI-84 Plus CE graphing calculator, on
+unmodified hardware (Python edition, rev M, OS 5.8), with native code started through arTIfiCE
+and the CE C libraries, and writes TI-BASIC programs. The calculator does all of the work
+itself, with no computer attached.
+
+What v2.6, the build on the author's calculator, does:
+
+- **280 of 1,000 programs right** on the calculator's ten-formula topic menu, measured in the
+  emulator on exactly the programs the calculator writes. The ten formulas were chosen because
+  an earlier model could already write them.
+- **Under 1% right on formulas absent from training.** On 20 held-out formulas, the training
+  recipe v2.6 uses is right about 1 time in 400 (0.24%, averaged over 16 training runs,
+  measured before its training data was cleaned).
+- **About 0.67 tokens per second**, timed on a real calculator for this model shape; v2.6's own
+  figure (0.669) is measured in the emulator.
+- **Byte-identical to the PC reference** on every program compared on hardware: for v2.6, the
+  two programs compared on 21 November.
+
+It generalises to almost nothing beyond the formulas it saw often in training; the contribution
+is the engine and the measurement.
 
 **This is a research project, not a product.** There is no app to download or install. This
 repository holds the paper and the code. It does not hold the trained model, and no program the
 model wrote.
 
-The paper is the full account: [docs/paper/calclm-paper.html](docs/paper/calclm-paper.html).
-GitHub shows HTML files as source: download it (Raw, then save) or clone the repository, and
-open the file in a browser. It covers the whole project, every experiment from E1 to E24, and
-has a plain-language view for readers without a background in AI or statistics.
+The paper is the full account:
+[CalcLM: a ternary transformer that writes TI-BASIC on a TI-84 Plus CE](https://cwklurks.github.io/calclm/paper/calclm-paper.html),
+on the project's GitHub Pages site. In this repository it is
+[docs/paper/calclm-paper.html](docs/paper/calclm-paper.html); GitHub shows HTML files as source:
+download it (Raw, then save) or clone the repository, and open the file in a browser. It covers
+the whole project, every experiment, and has a plain-language view for readers without a
+background in AI or statistics.
 
 ## What it is
 
@@ -30,10 +52,13 @@ has a plain-language view for readers without a background in AI or statistics.
 ## What it found
 
 The numbers come from the paper, as of 21 November 2026. The current release is v2.6, with
-the topic menu, released on 21 November: the hardware-checked v2.6-rc2 bundle, unchanged. The
-program and speed figures below are v2.3-rc2's, an unreleased candidate whose model is the best
-of 16 training runs of the best recipe that fits the calculator. It was picked after the fact,
-so it flatters the recipe a little.
+the topic menu, released on 21 November: the hardware-checked v2.6-rc2 bundle, unchanged. A
+release here is the build installed on the author's calculator; it is not distributed. The
+figures at the top are v2.6's.
+
+The older program and speed figures below are v2.3-rc2's, an unreleased candidate whose model is
+the best of 16 training runs of the best recipe that fits the calculator. It was picked after
+the fact, so it flatters the recipe a little.
 
 **Without a prompt** (what the calculator does on its own: a program on a random topic), of 300
 programs about 1 in 3 run cleanly, finishing without an error or a hang and showing something.
@@ -77,15 +102,17 @@ and nearly half run to the 1,024-token cap, about 25 minutes.
   size.** An exploratory sweep of 64 trained models (68,000 programs) found the bigger model's
   runs 3.3 points ahead of today's shape on average (24.7% against 21.4%). But on fresh
   programs the best bigger-model run, the best run of today's shape and v2.5-rc1's model tied
-  (28.6%, 28.4% and 28.2%). So the bigger model will not be ported for now, and v2.6, released
-  on 21 November, uses the best run of today's shape. Its hardware check passed that day,
-  byte-identical on the two programs compared.
+  (28.6%, 28.4% and 28.2%). So the bigger model will not be ported for now, and v2.6 (the
+  build on the author's calculator, 21 November) uses the best run of today's shape. Its
+  hardware check passed that day, byte-identical on the two programs compared.
 
 ## What is in this repository
 
 | path | what |
 |---|---|
 | `docs/paper/` | the paper |
+| `docs/index.html` | the GitHub Pages index, which links to the paper |
+| `LICENSES/` | the CC BY 4.0 legal code |
 | `model/` | training (ternary quantisation-aware training), the export format, the integer reference, the linker decoder, the topic menu |
 | `ce/` | the calculator program (C inference core, eZ80 assembly, UI), the matvec kernels, CEmu benchmarks, build tools and tests |
 | `tracker/` | the exact TI-BASIC program-state tracker (C, with a Python spec) behind the masks |
@@ -102,19 +129,31 @@ It is made from a private research repository, which keeps the full record.
 
 ## What is not published, and why
 
-- **The trained weights and the calculator bundles.** The model was trained on other people's
-  programs, and the per-source licence review needed before releasing weights has not been
-  done.
+- **The trained weights and the calculator bundles.** v2.6's weights are not published. The
+  model reproduces training text: a review of an earlier model's programs found credit lines
+  that name real people, often minors when they wrote the programs, in 44 of 300, and the
+  cleaned training recipe v2.6 uses still copies real training text in about 1 program in 200
+  (0.54%). Many training sources also carry no licence or a GPL licence (`corpus/CORPUS.md`,
+  "Licensing and terms"). A separate model trained only on licence-clean data is being
+  evaluated as a possible downloadable release.
 - **Any program the model generated.** The model sometimes reproduces training text nearly word
   for word, including credit lines with people's names.
 - **The training data.** The corpus collected from ticalc.org, TI-Planet and GitHub, the mined
   seeds and the AI-written programs used in some experiments. It is other people's work and is
   never redistributed. The corpus report (`corpus/CORPUS.md`) describes the sources and their
-  terms, without samples.
+  terms, without samples. Removal requests: an author who wants their programs left out of the
+  corpus can open an issue on this repository's GitHub issues
+  (https://github.com/cwklurks/calclm/issues).
 - **The TI-OS ROM and emulator state.** The ROM cannot be redistributed.
 - **The research record.** The experiment plans, write-ups, run records, hardware-check
   records, audit scripts, one-off experiment runners and working notes stay private. The paper
   reports their results and is the public record; where it cites them, it says so.
+
+## Exams
+
+Nothing installable is published, so there is no CalcLM to put on a calculator. Running it
+needs a jailbreak (arTIfiCE) to start native code. And for any formula it can write, a
+hand-written program stored on the calculator is faster and always right.
 
 ## What you can run
 
@@ -166,11 +205,13 @@ The code is released under the MIT licence; see [LICENSE](LICENSE). Copyright (c
 cwklurks.
 
 One exception: `ce/tools/shim.c` is licensed GPL-3.0-or-later because it adapts code from the
-CEmu project; all other code is MIT.
+CEmu project; all other code is MIT. The GPL-3.0 text is at
+https://www.gnu.org/licenses/gpl-3.0.txt.
 
 The paper (`docs/paper/`) and the other prose in this repository (the READMEs and notes beside
 the code) are released under the Creative Commons Attribution 4.0 International licence
-(CC BY 4.0, https://creativecommons.org/licenses/by/4.0/): anyone may share and adapt them if
-they credit cwklurks.
+(CC BY 4.0, https://creativecommons.org/licenses/by/4.0/; legal code in
+[LICENSES/CC-BY-4.0.txt](LICENSES/CC-BY-4.0.txt)): anyone may share and adapt them if they
+credit cwklurks.
 
 CalcLM is by cwklurks.

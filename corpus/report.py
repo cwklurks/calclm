@@ -195,11 +195,14 @@ def main() -> None:
       f"{fmt(sum(1 for b in gh_blobs if b.get('status') == 'ok'))} blobs fetched "
       f"({fmt(sum(1 for b in gh_blobs if b.get('status') == 'dup-sha'))} skipped as identical "
       "blobs).")
-    w("- Cemetech: **not used.** Its robots.txt opens with \"Block known bots whose purpose is "
-      "to harvest data\" and disallows ClaudeBot, GPTBot, Google-Extended, cohere-ai and similar "
-      "AI-training crawlers. Our User-Agent is not on the list, but the operator's intent is "
-      "plainly to opt out of AI-training collection, so we respected it. Most Cemetech BASIC "
-      "files are also mirrored on ticalc.org.\n")
+    w("- Cemetech: **not crawled.** Its robots.txt opens with \"Block known bots whose purpose "
+      "is to harvest data\" and disallows ClaudeBot, GPTBot, Google-Extended, cohere-ai and "
+      "similar AI-training crawlers. The operator's intent is plainly to opt out of AI-training "
+      "collection, so we respected it. Cemetech was not crawled, but Cemetech files mirrored on "
+      "ticalc.org were not filtered out.")
+    w("- Removal requests: an author who wants their programs left out of the corpus can open an "
+      "issue on the public repository's GitHub issues "
+      "(https://github.com/cwklurks/calclm/issues).\n")
 
     w("## Dedup and split\n")
     w(f"- Kept program variables (all sources, pre-dedup): {fmt(stats['kept_program_vars'])}")
