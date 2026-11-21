@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data:; connect-src 'none'">
+<title>CalcLM demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>CalcLM <span class="sub">in the browser</span></h1>
+  <p class="lede">The TI-84 Plus CE program's own C inference core, compiled to WebAssembly, running
+  the deployed model on this computer. Same model, seed, topic and mask level: the same program,
+  token for token. Nothing is sent anywhere.</p>
+  <p class="model" id="model">Loading the model...</p>
+</header>
+
+<main class="layout">
+  <form class="controls" id="controls" autocomplete="off">
+    <fieldset>
+      <legend>What should CalcLM write?</legend>
+      <div class="menu" id="menu" role="radiogroup" aria-label="Topic"></div>
+      <p class="reason" id="reason" hidden></p>
+    </fieldset>
+
+    <fieldset class="row">
+      <legend>Seed</legend>
+      <input id="seed" type="number" inputmode="numeric" min="0" max="4294967295" step="1" value="1"
+             aria-describedby="seed-help">
+      <button type="button" id="dice" title="A seed like the calculator's clock seed">Clock seed</button>
+      <p class="help" id="seed-help">Digits only, 0 to 4,294,967,295 (the calculator takes up to 999,999,999). A topic mixes the seed first (fmix32), as the
+      calculator does.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Mask level</legend>
+      <label class="opt"><input type="radio" name="level" value="1">
+        <span><b>1</b> v2.3's masks, with LD2 <small>(rc2's hardware check; the Python default)</small></span></label>
+      <label class="opt"><input type="radio" name="level" value="2" checked>
+        <span><b>2</b> v2.4's safety masks, with LD2 <small>(the calculator: Masks on)</small></span></label>
+      <label class="opt"><input type="radio" name="level" value="3">
+        <span><b>3</b> safety rules only, no LD2 <small>(the calculator: Masks off, Random only)</small></span></label>
+    </fieldset>
+
+    <fieldset class="row">
+      <legend>Pace</legend>
+      <select id="pace" aria-label="Pace">
+        <option value="0">As fast as it runs</option>
+        <option value="50" selected>Readable (20 tokens/s)</option>
+        <option value="1484">Calculator speed (0.67 tokens/s)</option>
+      </select>
+    </fieldset>
+
+    <p class="device" id="device" aria-live="polite"></p>
+
+    <div class="buttons">
+      <button type="submit" id="go" class="primary" disabled>Write</button>
+      <button type="button" id="stop" disabled>Stop</button>
+      <button type="button" id="retry" disabled title="Same topic, seed + 1 (the calculator's [2nd])">Another try</button>
+    </div>
+  </form>
+
+  <section class="screen" aria-label="Program">
+    <div class="screen-head">
+      <span id="title">No program yet</span>
+      <span id="count" class="count"></span>
+    </div>
+    <div class="bar" aria-hidden="true"><span class="fed" id="bar-fed"></span><span class="written" id="bar-written"></span></div>
+    <pre id="program" class="program" tabindex="0" aria-label="TI-BASIC program"></pre>
+    <p class="status" id="status" aria-live="polite"></p>
+    <p class="check" id="check"></p>
+    <dl class="facts" id="facts"></dl>
+    <div class="buttons"><button type="button" id="copy" disabled>Copy program text</button></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Dim text is the topic's opening, typed for the model; bright text is what the model wrote.
+  The token count includes the opening (the calculator's "done: N tok"). Generated programs can be
+  wrong: for a topic, try the check line's inputs.</p>
+</footer>
+
+<script src="build/calclm-core.js"></script>
+<script src="build/calclm-model.js"></script>
+<script src="calclm.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

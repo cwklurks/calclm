@@ -1,0 +1,21 @@
+[project]
+name = "calclm"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.4",
+    "pillow>=12.3.0",
+    "pytest>=9.1.1",
+    "tivars>=1.1.1",
+    "torch>=2.14.1",
+]
+
+[tool.pytest.ini_options]
+# runs/ and data/ are git-ignored outputs (run snapshots can contain conftest.py copies).
+norecursedirs = ["runs", "data", ".*", "*.egg", "build", "dist", "node_modules", "venv"]
+markers = ["slow: long runs (deselect with -m 'not slow')"]
+# A test that never returns (e.g. the calculator core stuck in a C loop, called in-process
+# through ctypes) fails the run with every thread's traceback instead of hanging it. The
+# longest test (a 600-token CEmu generation) takes about a minute and a half.
+faulthandler_timeout = 600
+faulthandler_exit_on_timeout = true

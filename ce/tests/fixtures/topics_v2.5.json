@@ -1,0 +1,174 @@
+{
+ "what": "CalcLM v2.5 topic menu measurement (PHASE3-topic-menu.md 3b): k 100 fresh seeds per candidate topic, judged by lab.tasks_v2.score2 in CEmu",
+ "export_sha256": "fb4bc774f7e13b285a35ad65486ac350d74792052cad9875848ba709ec1e1ee9",
+ "offsets_sha256": "4dcd1028a25020a7b6c84dd525c79f9766a6bf5c5b8316720c2da5252a1cffb8",
+ "cap": 256,
+ "mask_level": 2,
+ "seed_mix": "fmix32",
+ "temperature_q8": 205,
+ "top_k": 20,
+ "seeds": [
+  600001,
+  600100
+ ],
+ "samples_sha256": "6ef94d6a7cd0ab785237b22c2a5d88e192ee8f6e740f0b28b6052e6b0df79058",
+ "tok_per_s": 0.674,
+ "tok_per_s_source": "docs/agents/phase1-safety-masks.md 8: CEmu, W build, CLMCODE, level 2",
+ "topics": {
+  "CYL": {
+   "task": "geo_cylinder_volume",
+   "k": 100,
+   "passes": 67,
+   "labelled": 60,
+   "v3": 65,
+   "harness_errors": 0,
+   "wilson95": [
+    0.5731,
+    0.7544
+   ],
+   "mean_tokens": 87.29,
+   "p90_tokens": 96.3,
+   "at_cap": 3
+  },
+  "CIRC": {
+   "task": "geo_circle_area",
+   "k": 100,
+   "passes": 56,
+   "labelled": 48,
+   "v3": 54,
+   "harness_errors": 0,
+   "wilson95": [
+    0.4623,
+    0.6533
+   ],
+   "mean_tokens": 66.43,
+   "p90_tokens": 75.3,
+   "at_cap": 3
+  },
+  "SPEED": {
+   "task": "phy_average_speed",
+   "k": 100,
+   "passes": 31,
+   "labelled": 2,
+   "v3": 25,
+   "harness_errors": 0,
+   "wilson95": [
+    0.2278,
+    0.4063
+   ],
+   "mean_tokens": 127.35,
+   "p90_tokens": 256.0,
+   "at_cap": 14
+  },
+  "OHM": {
+   "task": "phy_ohm_voltage",
+   "k": 100,
+   "passes": 30,
+   "labelled": 13,
+   "v3": 28,
+   "harness_errors": 0,
+   "wilson95": [
+    0.2189,
+    0.3958
+   ],
+   "mean_tokens": 133.69,
+   "p90_tokens": 256.0,
+   "at_cap": 12
+  },
+  "C2F": {
+   "task": "conv_c_to_f",
+   "k": 100,
+   "passes": 21,
+   "labelled": 15,
+   "v3": 20,
+   "harness_errors": 0,
+   "wilson95": [
+    0.1417,
+    0.2998
+   ],
+   "mean_tokens": 104.7,
+   "p90_tokens": 165.1,
+   "at_cap": 8
+  },
+  "F2C": {
+   "task": "conv_f_to_c",
+   "k": 100,
+   "passes": 18,
+   "labelled": 13,
+   "v3": 18,
+   "harness_errors": 0,
+   "wilson95": [
+    0.117,
+    0.2667
+   ],
+   "mean_tokens": 104.37,
+   "p90_tokens": 133.0,
+   "at_cap": 4
+  },
+  "HYP": {
+   "task": "geo_hypotenuse",
+   "k": 100,
+   "passes": 24,
+   "labelled": 4,
+   "v3": 20,
+   "harness_errors": 0,
+   "wilson95": [
+    0.1669,
+    0.3323
+   ],
+   "mean_tokens": 122.95,
+   "p90_tokens": 256.0,
+   "at_cap": 15
+  },
+  "HEAT": {
+   "task": "ho_chem_heat",
+   "k": 100,
+   "passes": 18,
+   "labelled": 3,
+   "v3": 14,
+   "harness_errors": 0,
+   "wilson95": [
+    0.117,
+    0.2667
+   ],
+   "mean_tokens": 142.76,
+   "p90_tokens": 173.4,
+   "at_cap": 8
+  },
+  "QUAD": {
+   "task": "alg_quadratic_root",
+   "k": 100,
+   "passes": 16,
+   "labelled": 4,
+   "v3": 6,
+   "harness_errors": 0,
+   "wilson95": [
+    0.101,
+    0.2442
+   ],
+   "mean_tokens": 196.51,
+   "p90_tokens": 256.0,
+   "at_cap": 49
+  },
+  "SPH": {
+   "task": "geo_sphere_volume",
+   "k": 100,
+   "passes": 4,
+   "labelled": 4,
+   "v3": 4,
+   "harness_errors": 0,
+   "wilson95": [
+    0.0157,
+    0.0984
+   ],
+   "mean_tokens": 67.63,
+   "p90_tokens": 81.7,
+   "at_cap": 0
+  }
+ },
+ "random": {
+  "n": 300,
+  "mean_tokens": 748.91,
+  "source": "runs/phase1/unprompted/L2_*_seeds.jsonl (level 2, cap 1024)"
+ }
+}

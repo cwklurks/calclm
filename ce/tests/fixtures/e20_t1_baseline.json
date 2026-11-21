@@ -1,0 +1,25 @@
+{
+ "note": "PLAN-E20 T1: SHA-256 of the v2.2 (default) and v2.3 (W) build outputs on the unmodified tree (aae254f), built 2026-11-02 with ce.tools.clm.build_core(force=True) and make / make SHAPE=w. CALCLM.8xp is compared with its header comment (bytes 11..52, the build stamp) masked; core.o only when built in the same worktree path. Re-baselined for v2.4 (phase 1 safety masks, docs/agents/phase1-safety-masks.md): test.bin, core.o and CALCLM.8xp change by design; clmcode.bin, CLMCODE.8xv and code_id are v2.3's (asserted equal). v2.3's values are in git at c00ac07. Re-baselined for v2.5 (phase 3 topic menu, PHASE3-topic-menu.md, and mask level 3): test.bin, core.o and CALCLM.8xp change by design; clmcode.bin, CLMCODE.8xv and code_id are v2.3's (asserted equal). v2.4's values are in git at da92c2d. Re-baselined for v2.5-rc1 (mask level 3 keeps v2.3's destructive bans): test.bin, core.o and CALCLM.8xp change by design; clmcode.bin, CLMCODE.8xv and code_id are v2.3's (asserted equal). Phase 3's values are in git at a907c8f. Re-baselined for v2.6-rc2 (E24's L4c-s11, docs/agents/release-v2.6-rc2.md; rc1's L4c-s17 was not shipped): only CALCLM.8xp changes (src/topics.h: the new model's export sha, LD2 offsets and menu text); test.bin, core.o, clmcode.bin, CLMCODE.8xv and code_id are v2.5-rc1's (asserted equal). v2.5-rc1's values are in git at 63eb143.",
+ "commit": "v2.6-rc2 (E24's L4c-s11)",
+ "built_in": "<repo>",
+ "stamp": [
+  11,
+  53
+ ],
+ "default": {
+  "test.bin": "2f4e38fd1fc64e007dd16f2cc9513df992393ec426dcc03b5c8240bb02c08071",
+  "clmcode.bin": "d7d13f8b2ac182073d41e2ef95301a6fc51eb22510db561f16240e0d32c15901",
+  "CLMCODE.8xv": "43a6180f3663e9f74b5d22008ebe30f47d996acf20cea3da95480ba237674551",
+  "core.o": "63e0045fad016e57ff7cc7096f69e3cfcbbc0525916a7d605441ae14b6441341",
+  "code_id": "0x3cf19466",
+  "CALCLM.8xp_unstamped": "472657083e7ae7aecc4f98bf565cc2f699246cdf7c8b91bdae5158f0df6dd55e"
+ },
+ "w": {
+  "test.bin": "dc3ef6890b9d1b294f449ba2dcf7701406dda1ae1cb737c1e12efd4c5f1a43c7",
+  "clmcode.bin": "41bef5340b427ec36875daccebd87a99e38bf628c5eb0e6d873bc6f544001c27",
+  "CLMCODE.8xv": "aa7c17f5521bc107733eaa948e2993edccaa9f40ab4522e4b862da424d427931",
+  "core.o": "78cf1c06a6bdcb4c6d71b8a23784d27bd8b2aee451b68955435f3de42780ded6",
+  "code_id": "0xb14900be",
+  "CALCLM.8xp_unstamped": "dbb80d29c30e9027d146831ada2b60765fcb187b37ba635f939fbe15a2b9bcbc"
+ }
+}

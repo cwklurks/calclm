@@ -1,0 +1,29 @@
+# Environments, caches and build outputs
+.venv/
+__pycache__/
+*.pyc
+dist/
+ce/build/
+ce/**/bin/
+ce/**/obj/
+demo/build/
+*.o
+*.so
+
+# Data, run records and model exports: never committed
+data/
+runs/
+eval/runs/
+
+# Calculator programs and AppVars, weights, ROMs, archives and data dumps
+*.8xp
+*.8xv
+*.8xg
+*.8xk
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.rom
+*.zip
+*.jsonl

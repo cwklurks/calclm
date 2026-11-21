@@ -1,0 +1,1595 @@
+{
+ "about": "Hand-written stand-in for the private fixture, made by make_function_cases.py. Every program and screen was written by hand; none is model output or corpus text. The programs as typed are in that script.",
+ "cap": 1024,
+ "samples": [
+  [
+   1,
+   157,
+   24,
+   4,
+   147,
+   24,
+   67,
+   24,
+   13,
+   11,
+   4,
+   50,
+   11,
+   2
+  ],
+  [
+   1,
+   50,
+   7,
+   49,
+   22,
+   22,
+   32,
+   6,
+   82,
+   22,
+   30,
+   7,
+   2
+  ],
+  [
+   1,
+   18,
+   13,
+   44,
+   4,
+   51,
+   8,
+   5,
+   8,
+   5,
+   7,
+   44,
+   19,
+   7,
+   14,
+   4,
+   51,
+   8,
+   5,
+   16,
+   5,
+   44,
+   14,
+   2
+  ],
+  [
+   1,
+   50,
+   8,
+   10
+  ],
+  [
+   1,
+   9,
+   13,
+   11,
+   4,
+   50,
+   11,
+   4,
+   50,
+   8,
+   2
+  ],
+  [
+   1,
+   157,
+   29,
+   4,
+   50,
+   10,
+   29,
+   4,
+   65,
+   4,
+   62,
+   2
+  ],
+  [
+   1,
+   55,
+   11,
+   4,
+   62,
+   4,
+   157,
+   44,
+   4,
+   50,
+   44,
+   33,
+   17,
+   36,
+   4,
+   65,
+   4,
+   48,
+   11,
+   2
+  ],
+  [
+   1,
+   102,
+   4,
+   74,
+   59,
+   18,
+   5,
+   9,
+   5,
+   18,
+   5,
+   9,
+   14,
+   2
+  ],
+  [
+   1,
+   102,
+   4,
+   132,
+   10,
+   5,
+   16,
+   14,
+   4,
+   132,
+   59,
+   17,
+   5,
+   8,
+   14,
+   2
+  ],
+  [
+   1,
+   59,
+   8,
+   13,
+   11,
+   4,
+   137,
+   8,
+   4,
+   50,
+   11,
+   4,
+   65,
+   4,
+   39,
+   2
+  ],
+  [
+   1,
+   62,
+   2
+  ],
+  [
+   1,
+   157,
+   11,
+   2
+  ],
+  [
+   1,
+   48,
+   60,
+   2
+  ],
+  [
+   1,
+   50,
+   116,
+   2
+  ],
+  [
+   1,
+   50,
+   10,
+   33,
+   2
+  ],
+  [
+   1,
+   50,
+   7,
+   34,
+   22,
+   49,
+   6,
+   60,
+   12,
+   24,
+   22,
+   7,
+   4,
+   50,
+   224,
+   9,
+   14,
+   2
+  ],
+  [
+   1,
+   48,
+   30,
+   4,
+   50,
+   7,
+   23,
+   46,
+   26,
+   41,
+   41,
+   12,
+   32,
+   7,
+   4,
+   55,
+   30,
+   4,
+   50,
+   37,
+   2
+  ],
+  [
+   1,
+   18,
+   13,
+   11,
+   4,
+   50,
+   11,
+   4,
+   50,
+   7,
+   32,
+   22,
+   29,
+   12,
+   7,
+   2
+  ],
+  [
+   1,
+   50,
+   7,
+   23,
+   45,
+   38,
+   7,
+   4,
+   50,
+   16,
+   33,
+   17,
+   2
+  ],
+  [
+   1,
+   50,
+   16,
+   4,
+   50,
+   17,
+   4,
+   50,
+   7,
+   41,
+   11,
+   24
+  ],
+  [
+   1,
+   138,
+   2
+  ],
+  [
+   1,
+   50,
+   7,
+   20,
+   26,
+   38,
+   12,
+   15,
+   9,
+   7,
+   4,
+   50,
+   8,
+   2
+  ],
+  [
+   1,
+   7,
+   42,
+   26,
+   13,
+   94,
+   4,
+   50,
+   250,
+   9,
+   14,
+   2
+  ],
+  [
+   1,
+   50,
+   18,
+   4,
+   50,
+   7,
+   42,
+   26,
+   6,
+   20,
+   42,
+   12,
+   24,
+   12,
+   4,
+   50,
+   31
+  ],
+  [
+   1,
+   102,
+   4,
+   132,
+   9,
+   5,
+   9,
+   14,
+   4,
+   102,
+   2
+  ],
+  [
+   1,
+   102,
+   4,
+   132,
+   8,
+   5,
+   8,
+   14,
+   2
+  ]
+ ],
+ "records": [
+  {
+   "index": 0,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "R=?1",
+    "3.141592654"
+   ],
+   "lcd_text": [
+    "R=?1                      ",
+    "3.141592654               ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 1,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "GOOD JOB"
+   ],
+   "lcd_text": [
+    "GOOD JOB                  ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 2,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "X=5"
+   ],
+   "lcd_text": [
+    "X=5                       ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 3,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "0",
+    "1"
+   ],
+   "lcd_text": [
+    "0                         ",
+    "1                         ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 4,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [],
+   "lcd_text": [
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": [
+    [
+     "input",
+     40,
+     false,
+     [
+      "N=?█"
+     ]
+    ],
+    [
+     "pause",
+     80,
+     false,
+     [
+      "N=?1",
+      "2"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 5,
+   "outcome": "TIMEOUT",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "X=?"
+   ],
+   "lcd_text": [
+    "X=?                       ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": "input",
+   "yields": [
+    [
+     "input",
+     30,
+     false,
+     [
+      "X=?█"
+     ]
+    ],
+    [
+     "pause",
+     70,
+     false,
+     [
+      "X=?1",
+      "49"
+     ]
+    ]
+   ]
+  },
+  {
+   "index": 6,
+   "outcome": "OK",
+   "error": null,
+   "graph": true,
+   "home_text": [],
+   "lcd_text": [
+    "             .            ",
+    "             .            ",
+    "             .            ",
+    "             .            ",
+    "             .            ",
+    "..........................",
+    "             .            ",
+    "             .            ",
+    "             .            ",
+    "             .            "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 7,
+   "outcome": "OK",
+   "error": null,
+   "graph": true,
+   "home_text": [],
+   "lcd_text": [
+    "             .            ",
+    "             .            ",
+    "             .    .       ",
+    "             .            ",
+    "     .       .            ",
+    "..........................",
+    "             .            ",
+    "             .            ",
+    "             .            ",
+    "             .            "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 8,
+   "outcome": "TIMEOUT",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "⁻1"
+   ],
+   "lcd_text": [
+    "⁻1                        ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": "pause",
+   "yields": []
+  },
+  {
+   "index": 9,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [],
+   "lcd_text": [
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 10,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "A=?1"
+   ],
+   "lcd_text": [
+    "A=?1                      ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 11,
+   "outcome": "ERR",
+   "error": "LABEL",
+   "graph": false,
+   "home_text": [],
+   "lcd_text": [
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 12,
+   "outcome": "ERR",
+   "error": "UNDEFINED",
+   "graph": false,
+   "home_text": [],
+   "lcd_text": [
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 13,
+   "outcome": "ERR",
+   "error": "SYNTAX",
+   "graph": false,
+   "home_text": [],
+   "lcd_text": [
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 14,
+   "outcome": "ERR",
+   "error": "DOMAIN",
+   "graph": false,
+   "home_text": [
+    "LOG ZERO"
+   ],
+   "lcd_text": [
+    "LOG ZERO                  ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 15,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "7"
+   ],
+   "lcd_text": [
+    "7                         ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 16,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "5",
+    "DONE"
+   ],
+   "lcd_text": [
+    "5                         ",
+    "DONE                      ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 17,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "SUM",
+    "7"
+   ],
+   "lcd_text": [
+    "SUM                       ",
+    "7                         ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 18,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "3",
+    "4"
+   ],
+   "lcd_text": [
+    "3                         ",
+    "4                         ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 19,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [],
+   "lcd_text": [
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 20,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "TIME:0",
+    "1"
+   ],
+   "lcd_text": [
+    "TIME:0                    ",
+    "1                         ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 21,
+   "outcome": "ERR",
+   "error": "DOMAIN",
+   "graph": false,
+   "home_text": [],
+   "lcd_text": [
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 22,
+   "outcome": "OK",
+   "error": null,
+   "graph": false,
+   "home_text": [
+    "5",
+    "HI THERE"
+   ],
+   "lcd_text": [
+    "5                         ",
+    "HI THERE                  ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 23,
+   "outcome": "OK",
+   "error": null,
+   "graph": true,
+   "home_text": [],
+   "lcd_text": [
+    "                      ����",
+    "_                         ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  },
+  {
+   "index": 24,
+   "outcome": "OK",
+   "error": null,
+   "graph": true,
+   "home_text": [],
+   "lcd_text": [
+    "                          ",
+    "                          ",
+    "                      ����",
+    "_                         ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          ",
+    "                          "
+   ],
+   "timeout_state": null,
+   "yields": []
+  }
+ ],
+ "cases": [
+  {
+   "name": "computed_home",
+   "sample": 0,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": false,
+    "class": "strict_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [
+     "3.141592654"
+    ],
+    "dead": 0.0,
+    "tail_only": false
+   }
+  },
+  {
+   "name": "literal_substring",
+   "sample": 1,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     true,
+     false
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [
+     "GOOD JOB"
+    ],
+    "tail_literals": [
+     [
+      2,
+      "GOOD JOB"
+     ]
+    ],
+    "vis_lines": [
+     "GOOD JOB"
+    ],
+    "dead": 0.0,
+    "tail_only": true
+   }
+  },
+  {
+   "name": "literal_superstring",
+   "sample": 2,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     true,
+     false
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [
+     "X="
+    ],
+    "tail_literals": [],
+    "vis_lines": [
+     "X=5"
+    ],
+    "dead": 0.0,
+    "tail_only": false
+   }
+  },
+  {
+   "name": "trivial_only",
+   "sample": 4,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [
+     "0",
+     "1"
+    ],
+    "dead": 0.0,
+    "tail_only": false
+   }
+  },
+  {
+   "name": "yield_only",
+   "sample": 5,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "blank_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [
+     "2"
+    ],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "yield_only_timeout",
+   "sample": 6,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "TIMEOUT",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [
+     "49"
+    ],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "axes_only_graph",
+   "sample": 7,
+   "expect": {
+    "strict": true,
+    "strict2": false,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": false
+   }
+  },
+  {
+   "name": "drawn_graph",
+   "sample": 8,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": false,
+    "class": "strict_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": false
+   }
+  },
+  {
+   "name": "minus_one",
+   "sample": 9,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "TIMEOUT",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [
+     "⁻1"
+    ],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "blank_ok",
+   "sample": 10,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     false,
+     false
+    ],
+    "axes_only": true,
+    "class": "blank_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "echo_only",
+   "sample": 11,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     false,
+     false
+    ],
+    "axes_only": true,
+    "class": "blank_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "err_label",
+   "sample": 12,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": false,
+    "lus": true,
+    "computed": [
+     false,
+     false
+    ],
+    "axes_only": true,
+    "class": "ERR:LABEL",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "err_undefined",
+   "sample": 13,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": false,
+    "lus": true,
+    "computed": [
+     false,
+     false
+    ],
+    "axes_only": true,
+    "class": "ERR:UNDEFINED",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "err_syntax",
+   "sample": 14,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": false,
+    "lus": true,
+    "computed": [
+     false,
+     false
+    ],
+    "axes_only": true,
+    "class": "ERR:SYNTAX",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "err_other",
+   "sample": 15,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     false,
+     false
+    ],
+    "axes_only": true,
+    "class": "ERR:DOMAIN",
+    "literals": [
+     "LOG ZERO"
+    ],
+    "tail_literals": [
+     [
+      2,
+      "LOG ZERO"
+     ]
+    ],
+    "vis_lines": [
+     "LOG ZERO"
+    ],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "dead_code",
+   "sample": 16,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [
+     "SKIPPED"
+    ],
+    "tail_literals": [
+     [
+      5,
+      "SKIPPED"
+     ]
+    ],
+    "vis_lines": [
+     "7"
+    ],
+    "dead": 0.5238095238095238,
+    "tail_only": false
+   }
+  },
+  {
+   "name": "tail_only",
+   "sample": 17,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [
+     "DONE"
+    ],
+    "tail_literals": [
+     [
+      9,
+      "DONE"
+     ]
+    ],
+    "vis_lines": [
+     "5",
+     "DONE"
+    ],
+    "dead": 0.0,
+    "tail_only": true
+   }
+  },
+  {
+   "name": "number_and_label",
+   "sample": 18,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [
+     "SUM"
+    ],
+    "tail_literals": [
+     [
+      2,
+      "SUM"
+     ]
+    ],
+    "vis_lines": [
+     "7",
+     "SUM"
+    ],
+    "dead": 0.0,
+    "tail_only": true
+   }
+  },
+  {
+   "name": "unfinished",
+   "sample": 19,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [
+     "3",
+     "4"
+    ],
+    "dead": 0.0,
+    "tail_only": false
+   }
+  },
+  {
+   "name": "short_finished",
+   "sample": 20,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     false,
+     false
+    ],
+    "axes_only": true,
+    "class": "blank_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "colon_in_string",
+   "sample": 21,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [
+     "TIME:0"
+    ],
+    "tail_literals": [
+     [
+      2,
+      "TIME:0"
+     ]
+    ],
+    "vis_lines": [
+     "1",
+     "TIME:0"
+    ],
+    "dead": 0.0,
+    "tail_only": true
+   }
+  },
+  {
+   "name": "store_ends_string",
+   "sample": 22,
+   "expect": {
+    "strict": false,
+    "strict2": false,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     false,
+     false
+    ],
+    "axes_only": true,
+    "class": "ERR:DOMAIN",
+    "literals": [
+     "HI"
+    ],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": null
+   }
+  },
+  {
+   "name": "unclosed_at_cut",
+   "sample": 23,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [
+     "HI THERE"
+    ],
+    "tail_literals": [
+     [
+      5,
+      "HI THERE"
+     ]
+    ],
+    "vis_lines": [
+     "5",
+     "HI THERE"
+    ],
+    "dead": 0.0,
+    "tail_only": true
+   }
+  },
+  {
+   "name": "done_screen",
+   "sample": 24,
+   "expect": {
+    "strict": true,
+    "strict2": false,
+    "computed2": false,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": true,
+    "class": "strict_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": false
+   }
+  },
+  {
+   "name": "done_other_row",
+   "sample": 25,
+   "expect": {
+    "strict": true,
+    "strict2": true,
+    "computed2": true,
+    "lus": false,
+    "computed": [
+     true,
+     true
+    ],
+    "axes_only": false,
+    "class": "strict_ok",
+    "literals": [],
+    "tail_literals": [],
+    "vis_lines": [],
+    "dead": 0.0,
+    "tail_only": false
+   }
+  }
+ ],
+ "metrics": {
+  "strict": 56.0,
+  "strict2": 48.0,
+  "computed2": 40.0,
+  "noerr": 80.0,
+  "complete": 88.5,
+  "fin_len_med": 11.0,
+  "fin_le40": 100.0,
+  "dead": 2.1,
+  "ERR:LABEL": 4.0,
+  "ERR:UNDEFINED": 4.0,
+  "ERR:SYNTAX": 4.0,
+  "TIMEOUT": 8.0
+ },
+ "tail_only_share": 0.35714285714285715
+}
